@@ -9,7 +9,7 @@
   },
   {
     "url": "https://github.com/frappe/lms",
-    "branch": "main"
+    "branch": "version-13"
   },
   {
     "url": "https://github.com/frappe/insights",
@@ -21,11 +21,11 @@
   },
   {
     "url": "https://github.com/frappe/helpdesk",
-    "branch": "main"
+    "branch": "version-14"
   },
   {
     "url": "https://github.com/frappe/lending",
-    "branch": "develop"
+    "branch": "version-16"
   },
   {
     "url": "https://github.com/frappe/drive",
@@ -37,6 +37,6 @@
   },
   {
     "url": "https://github.com/frappe/twilio-integration",
-    "branch": "main"
+    "branch": "master"
   }
 ]
