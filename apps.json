@@ -9,7 +9,7 @@
   },
   {
     "url": "https://github.com/frappe/lms",
-    "branch": "version-13"
+    "branch": "main"
   },
   {
     "url": "https://github.com/frappe/insights",
@@ -21,7 +21,7 @@
   },
   {
     "url": "https://github.com/frappe/helpdesk",
-    "branch": "version-14"
+    "branch": "main"
   },
   {
     "url": "https://github.com/frappe/lending",
