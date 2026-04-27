@@ -25,8 +25,13 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          platforms: linux/amd64
-          push: true
-          tags: labmgm/frappe-docker:staging
+        run: |
+          docker buildx build \
+            --build-arg=FRAPPE_PATH=https://github.com/frappe/frappe \
+            --build-arg=FRAPPE_BRANCH=${{ vars.FRAPPE_BRANCH }} \
+            --secret=id=apps_json,src=apps.json \
+            --tag=labmgm/frappe-docker:staging-${{ vars.FRAPPE_BRANCH }} \
+            --file=images/layered/Containerfile \
+            --push \
+            --platform=linux/amd64 \
+            .
